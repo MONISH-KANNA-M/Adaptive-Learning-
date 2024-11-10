@@ -104,7 +104,7 @@ app.post("/login", async (req, res) => {
         console.log("User logged in successfully");
 
         // Redirect to a welcome page or dashboard
-        return res.redirect('/dashboard.html'); // Create a dashboard page for logged-in users
+        return res.redirect('index.html'); // Create a dashboard page for logged-in users
     } catch (err) {
         console.error("Error during login", err);
         res.status(500).send("Internal Server Error");
